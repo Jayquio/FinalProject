@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    min-height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(IMG/teyvatlandscape.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10%;
+    text-align: center;
+    color: white;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(IMG/teyvatlandscape.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+section.aspect1 {
+    width: 80%;
+    margin-bottom: 20%;
+    background-color: linear-gradient(to bottom, #4b62c7 23%, #330c43 95%);
+    color: bisque;
+    letter-spacing: 0.5px;
+    text-align: justify
+    
+}
+section.aspect2 {
+    width: 80%;
+    margin-bottom: 20%;
+    background-color: linear-gradient(to bottom, #4b62c7 23%, #330c43 95%);
+    color: aliceblue;
+    letter-spacing: 0.5px;
+    text-align: justify
+}
+
+section.aspect3 {
+    width: 80%;
+    margin-bottom: 20%;
+    background-color: linear-gradient(to bottom, #4b62c7 23%, #330c43 95%);
+    color: antiquewhite;
+    letter-spacing: 0.5px;
+    text-align: justify
+}
+.box1{ 
+    display: inline-block; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    background-color: rgba(19, 18, 18, 0.8);
+}
+.box2{ 
+    display: inline-block; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    background-color: rgba(19, 18, 18, 0.8);
+}
+.box3{ 
+    display: inline-block; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    background-color: rgba(19, 18, 18, 0.8);
+}
+
+
+footer{
+ background-color: #4b62c7;
+ padding: 20px;
+}
+.aspect1, .aspect2 , .aspect3{
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .container{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .text,.image{
+      width: 100%;
+    } 
+    .container{
+      min-width: 200px;
+      padding: 40px 0px;
+    }
+    .text{
+      display: block;
+      width: 100%;
+      padding: 20px 40px;
+    }
+    .image{
+      display: flex;
+      width: 200px;
+      align-self: center;
+      justify-content: center;
+      margin: auto;
+    }
+   }

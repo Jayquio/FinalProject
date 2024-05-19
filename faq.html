@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="faq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          What does a software developer do?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Software developers are the creative minds behind the applications, websites, and software systems we use every day. They translate ideas and user needs into functional code, ensuring the software runs smoothly and efficiently. <br>Their tasks can involve:
+            <ul ><li>Designing, developing, and testing software</li> applications
+              <li>Writing, debugging, and maintaining code</li>
+              <li>Collaborating with designers, product managers, and other developers</li>
+              <li>Staying up-to-date with the latest programming languages and technologies</li></ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What skills are needed to become a software developer?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Software developers need a strong foundation in computer science principles and programming languages. <br>Here are some key skills:
+            <br>
+            <strong>Technical Skills:</strong> Programming languages (e.g., Python, Java, JavaScript), software development methodologies (e.g., Agile), problem-solving skills, analytical thinking
+            <br>
+            <strong>Soft Skills:</strong> Communication, teamwork, time management, ability to learn new technologies quickly
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What are the different types of software developers?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            There are many specializations within software development, each focusing on a specific area. <br>Some common types include:
+<ul>
+  <li><b>Front-End Developers:</b> Build the user interface (UI) and user experience (UX) of web applications.</li>
+  <li><b>Back-End Developers:</b> Develop the server-side logic and data management of applications.</li>
+  <li><b>Mobile Developers:</b> Create applications for smartphones and tablets.</li>
+  <li><b>Full-Stack Developers:</b> Possess skills in both front-end and back-end development.</li></ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Is software development a good career choice?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Software development is a rapidly growing field with high demand for skilled professionals. It offers competitive salaries, excellent job opportunities, and the potential to work on innovative projects that impact millions of users.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I become a software developer?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            There are several paths to becoming a software developer. <br>Some options include:
+
+            <ul><li>Earning a computer science degree (Bachelor's or Master's)</li>
+            <li>Completing a coding bootcamp or online courses</li>
+          <li>Self-learning through tutorials and personal projects</li></ul> 
+              </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
